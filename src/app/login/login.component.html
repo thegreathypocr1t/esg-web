@@ -1,0 +1,11 @@
+<div class="boxHolder">
+    <!-- <ngx-spinner></ngx-spinner> -->
+    <img src="../../assets/img/esg_logo.jpg" alt="" class="logo">
+    <label for="username">Username</label>
+    <input type="text" [(ngModel)]="username">
+    <br>
+    <label for="username">Password</label>
+    <input type="password" [(ngModel)]="password">
+    <button (click)="loginClicked()">Login</button>
+    <ngx-spinner bdOpacity=0 bdColor="rgba(51,51,51,0.54)" size="medium" color="#fff" type="ball-spin-clockwise-fade" fullScreen="true"></ngx-spinner>
+</div>

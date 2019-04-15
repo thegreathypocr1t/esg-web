@@ -1,0 +1,21 @@
+<ul>
+  <li><button (click)=logoutClicked()>Logout</button></li>
+</ul>
+<label class="custom-file-upload">
+  <input type="file" (change)="onFileChange($event)" multiple="false">
+  Choose File
+</label>
+
+<div>
+  <table class="customTable">
+    <tr *ngFor="let row of data">
+      <td *ngFor="let val of row">
+        {{val}}
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div *ngIf="clicked">
+  <button (click)=buttonOnClick()>Upload</button>
+</div>
